@@ -393,10 +393,15 @@ void Window::setHelpPrompts(const std::vector<HelpPrompt>& prompts, const HelpSt
 
 void Window::onSleep()
 {
+	
+	system("sudo shutdown -h +1");
+
 }
 
 void Window::onWake()
 {
+	
+	system("sudo shutdown -c");
 
 }
 
